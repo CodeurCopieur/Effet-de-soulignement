@@ -1,0 +1,55 @@
+html, body {
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  width: 650px;
+  margin: 40px auto;
+}
+
+h1 {
+  color: #000;
+  line-height: 1.1;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  background: linear-gradient(to top, rgba(0, 0, 238, .5) 0%, rgba(0, 0, 238, .5) 10%, transparent 10.01%) no-repeat;
+  background-size: 0% 100%;/* hauteur 0%, largeur 100% */ 
+  transition: background-size .3s ease;
+}
+
+a:hover{
+  background-size: 100% 100%;
+}
+
+.content a {
+  background-size: 100% 100%;
+}
+
+.content a:hover {
+  animation: line 1s both;
+}
+
+@keyframes line {
+  from {
+    background-size: 100% 100%;
+    background-position: bottom right;
+  }
+  50% {
+    background-size: 0% 100%;
+    background-position: bottom right;
+  }
+  50.01% {
+    background-position: bottom left;
+  }
+  100% {
+    background-size: 100% 100%;
+    background-position: bottom left;
+  }
+  
+}

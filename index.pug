@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="assets/css/index.css")
+    title Effet de soulignement
+  body
+    .container
+      h1
+        a(href="#") Lorem, ipsum.<br> Lorem, ipsum.
+      p.content Lorem 
+        a(href="#") Lorem, ipsum
+        |  Lorem, ipsum. amet consectetur adipisicing elit. Tenetur saepe error placeat laudantium, molestias possimus delectus cumque porro perspiciatis aliquid dolore, asperiores libero dicta, ea ut neque a odit veniam. 
+        a(href="#") Lorem, ipsum
+      p
+      - const myStyles = {"color": "#000", "font-weight": "500px"}
+       a(href="#" style=myStyles) En savoir plus
